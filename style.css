@@ -34,6 +34,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 9999;
 }
 
 .logo{
@@ -152,8 +153,6 @@ nav ul li a:hover::after{
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
-
 
 .links{
     display: block;
