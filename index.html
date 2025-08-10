@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heeta Bhanushali Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9118c18155.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!---------- HOME PAGE -------------->
+    <div id="header">
+        <nav>
+            <img src="images/Heeta..png", alt="logo", class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="header-text">  
+                <!-- <h1>Hello, <br>I'm <span>Heeta Bhanushali</span></h1>  -->
+                 <h1><br><span>Heeta Bhanushali</span></h1>
+                <p>Computer Engineering Student</p>
+                <a href="images/heeta_resume.pdf" class="btn">Download Resume</a>
+            </div>
+            
+        </div>
+    </div>
+
+
+<!--------- ABOUT PAGE ---------->
+    <div id="about">
+        <div class="container">
+            <h1 class="title">About Me</h1>
+            <div class="row">
+                <div class="about_column_01">
+                    <img src="images/photoss.jpg" alt="My Photo">
+                </div>
+                <div class="about_column_02">
+                    
+                    <p>A dedicated computer engineering student at DJ Sanghvi College, 
+                        actively engaged in honing technical skills and
+                        exploring innovative solutions. Eager to apply classroom 
+                        knowledge to real-world projects and contribute to the
+                        dynamic field of technology.
+                    </p>
+                    <div class="sub-titles">
+                            <p class="links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="links" onclick="opentab('experience')">Positions</p>
+                            <p class="links" onclick="opentab('education')">Education</p>
+                            <p class="links" onclick="opentab('certificates')">Certificates</p>
+                    </div>
+                    
+                    <!-- skills content -->
+                    <div class="sub-contents show-this" id="skills">
+                        <ul>
+                            <li><span>Development & Programming</span><br>C, C++, Java, Python, HTML, CSS, Dart, Flutter, Firebase</li>
+                            <li><span>Software & Tools</span><br>Visual Studio, AutoCAD, Canva, PowerBI, Tableu</li>
+                            <li><span>Data & Algorithm</span><br>SQL, Advanced Algorithms, Data Structures, PostgreSQL, Compiler Design</li>
+                            <li><span>Soft Skills</span><br>Communication & Team Collaboration, Presentation, Critical thinking and analytical reasoning</li>
+                            <li><span>Languages</span><br>English, Hindi, Marathi, Kutchhi, Gujarati, Deutsch</li>
+                        </ul>
+                        </ul>
+                    </div>
+                    <!-- experience content -->
+                    <div class="sub-contents" id="experience">
+                        <ul>
+                            <li><span>DJS Trinity</span><br>Marketing Co-Comm Member</li>
+                            <li><span>DJS eXpress</span><br>Creatives Co-Comm Member</li>
+                            <li><span>DJ Unicode</span><br>Flutter Mentee</li>
+                            <li><span>DJS ACM</span><br>Creatives Co-Comm Member</li>
+                        </ul>
+                    </div>
+                    <!-- education content -->
+                    <div class="sub-contents" id="education">
+                        <ul>
+                            <li><span>2010 - 2020</span><br>Smt. Surajba Vidya Mandir [SSC]</li>
+                            <li><span>2020 - 2022</span><br>Mithibai College [Computer Science]</li>
+                            <li><span>2022 - 2026</span><br>D.J. Sanghvi College of Engineering [Computer Engineering]</li>
+                        </ul>
+                    </div>
+                    <!-- certification content -->
+                    <div class="sub-contents" id="certificates">
+                        <ul>
+                            <li><a href="https://drive.google.com/file/d/1liM7gT6dlhnWYEMaxXijbjtkzRpq32dW/view?usp=drive_link" target="_blank"><span>Fundamentals Of Digital Marketing</span></a><br>Google Digital Garage</li>
+                            <li><a href="https://drive.google.com/file/d/1hrgW9mJAV7Y4hFSYpSHcw9a8NwZgws-Y/view?usp=drive_link" target="_blank"><span>Flutter & Dart - The Complete Guide</span></a><br>udemy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<!-- ------------ PROJECTS PAGE ----------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="title">My Projects</h1>
+
+            <div class="projects-wrapper">
+                <div class="project-list">
+
+                    <!-- PROJECT -->
+                    <div class="project">
+                        <div class="image">
+                            <img src="images/project2.png" alt="unicode task">
+                        </div>
+                        <div class="project-title">
+                            <h1>Quiz App</h1>
+                        </div>
+                        <a href="https://github.com/heetabhanushali/quiz_application.git" class="git-btn"> GitHub </a>
+                    </div>
+
+                    <div class="project">
+                        <div class="image">
+                            <img src="images/card_dashboard.png" alt="Credit Card Dashboard">
+                        </div>
+                        <div class="project-title">
+                            <h1>PowerBI Dashboard</h1>
+                        </div>
+                        <a href="https://github.com/heetabhanushali/credit-card-analysis.git" class="git-btn"> GitHub </a>
+                    </div>
+
+                    <div class="project">
+                        <div class="image">
+                            <img src="images/sales_dashboard.png" alt="Sales Dashboard">
+                        </div>
+                        <div class="project-title">
+                            <h1>Sales Dashboard</h1>
+                        </div>
+                        <a href="https://github.com/heetabhanushali/sales-dashboard.git" class="git-btn"> GitHub </a>
+                    </div>
+
+                    <div class="project">
+                        <div class="image">
+                            <img src="images/keyboard.png" alt="Virtual Keyboard">
+                        </div>
+                        <div class="project-title">
+                            <h1>Virtual Keyboard</h1>
+                        </div>
+                        <a href="https://github.com/heetabhanushali/Virtual-Keyboard.git" class="git-btn"> GitHub </a>
+                    </div>
+
+                    <div class="project">
+                        <div class="image">
+                            <img src="images/expense.png" alt="Expense Tracker App">
+                        </div>
+                        <div class="project-title">
+                            <h1>Expense Tracker</h1>
+                        </div>
+                        <a href="https://github.com/heetabhanushali/flutter-expense-tracker-app.git" class="git-btn"> GitHub </a>
+                    </div>
+
+                    <div class="project">
+                        <div class="image">
+                            <img src="images/project1.png" alt="unicode task">
+                        </div>
+                        <div class="project-title">
+                            <h1>Flutter App</h1>
+                        </div>
+                        <a href="https://github.com/heetabhanushali/Djs_Heeta_Unicode_Task_2023.git" class="git-btn"> GitHub </a>
+                    </div>
+
+                     <div class="project">
+                        <div class="image">
+                            <img src="images/unavailable.png" alt="Hotel Booking App">
+                        </div>
+                        <div class="project-title">
+                            <h1>Hotel Booking App</h1>
+                        </div>
+                        <a href="https://github.com/heetabhanushali/flutter-hotel_booking-app.git" class="git-btn"> GitHub </a>
+                    </div>
+
+                </div>
+
+                <button class="scroll-btn left">&#10094;</button>
+                <button class="scroll-btn right">&#10095;</button>
+            </div>
+        </div>
+        <!-- <button class="scroll-btn left">&#10094;</button>
+        <button class="scroll-btn right">&#10095;</button> -->
+    </div>
+
+<!------------------- CONTACT ----------------------->
+    <div id="contact">
+        <div class="container">
+            <h1 class="title">Contact Me</h1>
+            <div class="row">
+
+                <div class="contact-left">
+                    <p> <a href="mailto:heetabhanushali@gmail.com"> <i class="fa-solid fa-paper-plane"></i> heetabhanushali@gmail.com</a></p>
+                    <p> <a href="tel:+918591156784"> <i class="fa-solid fa-phone"></i> 8591156784</a></p>
+                    <p> <a href="https://github.com/heetabhanushali" target="_blank"><i class="fa-brands fa-github"></i> heeta bhanushali</a></p>
+                    <p> <a href="https://www.linkedin.com/in/heetabhanushali" target="_blank"><i class="fa-brands fa-linkedin"></i> heetabhanushali</a></p>
+                </div>
+
+                <div class="contact-right">
+                    <form method="POST" id="form">
+                        <input type="hidden" name="access_key" value="a0d89a3d-718e-44dc-8afe-fd5368f68b14">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">
+                            Submit
+                        </button>
+                        <div id="result"></div>
+                    </form>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="end">
+                <p>&copy; 2025 Heeta Bhanushali. All rights reserved.</p>
+                <p class="last-updated">Last updated: August 2025</p>
+            </div>
+
+</body>
+</html>
