@@ -99,6 +99,21 @@ nav ul li a:hover::after{
     padding: 14px 30px;
 }
 
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
 
 /*                     about section                        */
 
@@ -371,4 +386,211 @@ form input , form textarea{
 .last-updated {
     font-style: italic;
     color: #ff3e8f;
+}
+
+
+/* =============== MOBILE RESPONSIVE STYLES =============== */
+@media only screen and (max-width: 768px) {
+    
+    #header {
+        background-image: url(images/background_phone.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Navigation */
+    nav {
+        padding: 10px 5%;
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        width: 120px;
+    }
+    
+    nav ul {
+        background: #080808;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+        flex-direction: column;
+        display: flex;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    
+    nav ul li a {
+        font-size: 18px;
+    }
+    
+    .nav-toggle {
+        display: flex;
+        z-index: 3;
+    }
+    
+    /* Container */
+    .container {
+        padding: 10px 5%;
+    }
+    
+    /* Header */
+    .header-text {
+        margin: 90% 3%;
+        font-size: 20px;
+        text-align:left;
+    }
+    
+    .header-text h1 {
+        font-size: 35px;
+        margin: 15px 0;
+    }
+    
+    .btn {
+        font-size: 16px;
+        padding: 12px 25px;
+        margin: 50px 0;
+    }
+    
+    /* About Section */
+    #about {
+        padding: 60px 0;
+    }
+    
+    .title {
+        font-size: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about_column_01, .about_column_02 {
+        flex-basis: 100%;
+    }
+    
+    .about_column_01 img {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .sub-titles {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .links {
+        margin-right: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .sub-contents ul li {
+        margin: 15px 0;
+    }
+    
+    .sub-contents ul li span {
+        font-size: 16px;
+    }
+    
+    /* Projects Section */
+    #projects {
+        padding: 60px 0;
+    }
+    
+    .projects-wrapper {
+        position: relative;
+    }
+    
+    .project {
+        flex: 0 0 280px;
+        max-width: 280px;
+        height: 420px;
+        margin-right: 20px;
+    }
+    
+    .scroll-btn {
+        top: 50%;
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    
+    .scroll-btn.left {
+        left: 10px;
+    }
+    
+    .scroll-btn.right {
+        right: 10px;
+    }
+    
+    .image {
+        width: 85%;
+        height: 60%;
+        margin-top: 20px;
+    }
+    
+    .project-title h1 {
+        font-size: 18px;
+    }
+    
+    .git-btn {
+        padding: 10px 35px;
+        font-size: 11px;
+        margin-top: 15px;
+    }
+    
+    /* Contact Section */
+    #contact {
+        padding: 60px 0;
+    }
+    
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    
+    .contact-left {
+        margin-bottom: 30px;
+    }
+    
+    .contact-left p {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .contact-left p i {
+        font-size: 18px;
+    }
+    
+    form input, form textarea {
+        padding: 15px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .btn.btn2 {
+        padding: 12px 30px;
+        font-size: 14px;
+        display: block;
+        margin: 20px auto 0;
+        width: fit-content;
+    }
+    
+    /* Footer */
+    .end {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
 }

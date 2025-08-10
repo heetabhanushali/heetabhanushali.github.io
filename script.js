@@ -136,3 +136,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+
+// MOBILE MENU TOGGLE
+function toggleMenu() {
+    const menu = document.getElementById("sidemenu");
+    if (menu.style.right === "0px") {
+        menu.style.right = "-200px";
+    } else {
+        menu.style.right = "0px";
+    }
+}
+
+// Close menu when clicking on a link
+document.addEventListener('DOMContentLoaded', function() {
+    const menuLinks = document.querySelectorAll('#sidemenu a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            document.getElementById("sidemenu").style.right = "-200px";
+        });
+    });
+});
